@@ -48,7 +48,3 @@ flutter:
           weight: 300
         - asset: fonts/Nunito-Regular.ttf
           weight: 400
-        - asset: fonts/Nunito-Thin.ttf
-          weight: 100
-        - asset: fonts/Nunito-Medium.ttf
-          weight: 500

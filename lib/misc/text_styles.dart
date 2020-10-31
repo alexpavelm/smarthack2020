@@ -11,7 +11,6 @@ abstract class AppStyle {
   static TextStyle pageTitle = TextStyle(fontSize: adaptiveFont(75), fontWeight: FontWeight.w900, color: Colors.black);
   static TextStyle categoryWhiteSubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: Colors.white);
   static TextStyle greenSubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: AppColor.lightGreen);
-  static TextStyle categoryWhiteSubtitle= TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: Colors.white);
   static TextStyle smallBundleTitle= TextStyle(fontSize: adaptiveFont(40), fontWeight: FontWeight.w900, color: Colors.black);
 
   static TextStyle loginTitle = TextStyle(fontSize: ScreenUtil().setSp(110), color: AppColor.black);

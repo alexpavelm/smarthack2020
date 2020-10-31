@@ -1,6 +1,7 @@
 import 'package:baseapp/misc/text_styles.dart';
 import 'package:baseapp/misc/utils.dart';
 import 'package:baseapp/widgets/category_card.dart';
+import 'package:baseapp/widgets/small_bundle_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 
@@ -34,20 +35,22 @@ class _SecondScreenState extends State<SecondScreen> {
           style: AppStyle.greenSubtitle),
         ),
         verticalSpace(30),
-        Container(
-          height: 80.0,
-          child: new ListView(
-            scrollDirection: Axis.horizontal,
-            children: new List.generate(10, (int index) {
-              return new Card(
-                color: Colors.blue[index * 100],
-                child: new Container(
-                  width: 50.0,
-                  height: 50.0,
-                  child: new Text("$index"),
-                ),
-              );
-            }),
+        Padding(
+          padding: EdgeInsets.only(left: adaptiveWidth(90), right: adaptiveWidth(90)),
+          child: Container(
+            height: adaptiveWidth(300),
+            child: new ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                SmallBundleCard(image: '', title: 'Fruit Pack'),
+                horizontalSpace(30),
+                SmallBundleCard(image: '', title: 'Veggies'),
+                horizontalSpace(30),
+                SmallBundleCard(image: '', title: 'Meat & Fish'),
+                horizontalSpace(30),
+                SmallBundleCard(image: '', title: 'Fruit Pack'),
+              ]
+            ),
           ),
         ),
         Padding(
@@ -67,11 +70,11 @@ class _SecondScreenState extends State<SecondScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             verticalSpace(30),
-            CategoryCard(image: '', title: 'Image', subtitle: 'Subtitle'),
+            CategoryCard(image: '', title: 'Essentials', subtitle: 'Wild variety for wild tastes'),
             verticalSpace(60),
-            CategoryCard(image: '', title: 'Image2', subtitle: 'Subtitle23'),
+            CategoryCard(image: '', title: 'Cooking Adventure', subtitle: 'Discover your undiscovered talents'),
             verticalSpace(60),
-            CategoryCard(image: '', title: 'Image3', subtitle: 'Subtitle3'),
+            CategoryCard(image: '', title: 'Gym It Up', subtitle: 'Discover your undiscovered talents'),
           ],
         )
       ],

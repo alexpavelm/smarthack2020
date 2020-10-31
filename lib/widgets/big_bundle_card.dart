@@ -4,6 +4,7 @@ import 'package:baseapp/misc/utils.dart';
 import 'package:baseapp/models/bundle_model.dart';
 import 'package:baseapp/models/bundle_object_model.dart';
 import 'package:baseapp/views/bundle/bundle_screen.dart';
+import 'package:baseapp/views/new_bundle/new_bundle_screen.dart';
 import 'package:baseapp/widgets/bundle_tag_container.dart';
 import 'package:flutter/material.dart';
 
@@ -20,10 +21,10 @@ class BigBundleCard extends StatelessWidget {
       onTap: () {
         myBundles.contains(bundleModel)
         ? Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => BundlePage(bundleModel)),
+          MaterialPageRoute(builder: (context) => NewBundleScreen(bundleModel)),
         )
        : Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => BundlePage(bundleModel)),
+          MaterialPageRoute(builder: (context) => NewBundleScreen(bundleModel)),
         );
       },
       child: ClipRRect(

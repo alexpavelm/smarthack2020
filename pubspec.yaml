@@ -28,6 +28,7 @@ dependencies:
   rxdart: ^0.24.1
   shared_preferences: ^0.5.12+2
   http: ^0.12.2
+  animations: ^1.1.2
 
 dev_dependencies:
   flutter_test:

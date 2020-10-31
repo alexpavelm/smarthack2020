@@ -21,7 +21,7 @@ class BigBundleCard extends StatelessWidget {
       onTap: () {
         myBundles.contains(bundleModel)
         ? Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => NewBundleScreen(bundleModel)),
+          MaterialPageRoute(builder: (context) => BundlePage(bundleModel)),
         )
        : Navigator.of(context).push(
           MaterialPageRoute(builder: (context) => NewBundleScreen(bundleModel)),

@@ -6,5 +6,5 @@ class CategoryModel {
   final List<BundleModel> bundles;
   final String subtitle;
 
-  CategoryModel(this.title, this.image, this.bundles, this.subtitle);
+  CategoryModel({this.title, this.image, this.bundles, this.subtitle});
 }

@@ -25,11 +25,11 @@ class _ThirdScreenState extends State<ThirdScreen> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              BigBundleCard(bundleModel: fruitBundle[0]),
+              BigBundleCard(bundleModel: fruitBundle1),
               verticalSpace(60),
-              BigBundleCard(bundleModel: fruitBundle[0]),
+              BigBundleCard(bundleModel: fruitBundle2),
               verticalSpace(60),
-              BigBundleCard(bundleModel: fruitBundle[0]),
+              BigBundleCard(bundleModel: fruitBundle3),
             ]
           ),
           Padding(
@@ -46,11 +46,11 @@ class _ThirdScreenState extends State<ThirdScreen> {
           Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                BigBundleCard(bundleModel: fruitBundle[0]),
+                BigBundleCard(bundleModel: fruitBundle1),
                 verticalSpace(60),
-                BigBundleCard(bundleModel: fruitBundle[0]),
+                BigBundleCard(bundleModel: fruitBundle2),
                 verticalSpace(60),
-                BigBundleCard(bundleModel: fruitBundle[0]),
+                BigBundleCard(bundleModel: fruitBundle3),
               ]
           ),
         ],

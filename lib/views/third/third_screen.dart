@@ -1,5 +1,6 @@
 import 'package:baseapp/misc/text_styles.dart';
 import 'package:baseapp/misc/utils.dart';
+import 'package:baseapp/widgets/tag_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 
@@ -20,7 +21,10 @@ class _ThirdScreenState extends State<ThirdScreen> {
             style: AppStyle.pageTitle,
           ),
           verticalSpace(60),
-          Column(),
+          Column(
+            children: [
+            ]
+          ),
           Padding(
             padding: EdgeInsets.only(left: adaptiveWidth(60), right: adaptiveWidth(60)),
             child: Divider(

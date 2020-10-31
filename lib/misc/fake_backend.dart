@@ -1,5 +1,6 @@
 import 'package:baseapp/models/bundle_model.dart';
 import 'package:baseapp/models/bundle_object_model.dart';
+import 'package:baseapp/models/category_model.dart';
 import 'package:flutter/material.dart';
 
 BundleModel fruitBundle1 = 
@@ -53,7 +54,7 @@ BundleModel fruitBundle1 =
         subtitle: "15% had this",
       )
     ],
-  )
+  );
 
 BundleModel fruitBundle2 = 
   BundleModel(
@@ -94,7 +95,7 @@ BundleModel fruitBundle2 =
         subtitle: "75% had this",
       )
     ],
-  )
+  );
 
 BundleModel fruitBundle3 = BundleModel(
     title: "Vitamin C Booster",
@@ -140,7 +141,7 @@ BundleModel fruitBundle3 = BundleModel(
         subtitle: "60% had this",
       )
     ],
-  )
+  );
 BundleModel fruitBundle4 = BundleModel(
     title: "Peel 'Em Off",
     subtitle: "Ships next in 3 days",
@@ -179,7 +180,7 @@ BundleModel fruitBundle4 = BundleModel(
         subtitle: "10% had this",
       )
     ],
-  )
+  );
 
 BundleModel veggieBundle1 = BundleModel(
     title: "Veggie Pack",
@@ -219,7 +220,7 @@ BundleModel veggieBundle1 = BundleModel(
         subtitle: "50% had this",
       ),
     ],
-  )
+  );
   
 BundleModel veggieBundle2 = BundleModel(
     title: "Salad Essentials",
@@ -265,7 +266,7 @@ BundleModel veggieBundle2 = BundleModel(
         subtitle: "50% had this",
       )
     ],
-  )
+  );
 
 BundleModel veggieBundle3 = BundleModel(
     title: "Veggie Soup Mix",
@@ -311,7 +312,7 @@ BundleModel veggieBundle3 = BundleModel(
         subtitle: "50% had this",
       )
     ],
-  )
+  );
 
 BundleModel veggieBundle4 = BundleModel(
     title: "Ready for Pickling",
@@ -351,13 +352,13 @@ BundleModel veggieBundle4 = BundleModel(
         subtitle: "50% had this",
       )
     ],
-  )
+  );
 
 List<CategoryModel> categories = [
      CategoryModel(
         title: "Fruit Essentials",
         bundles: [
-            fruitbundle1,
+            fruitBundle1,
             fruitBundle2,
             fruitBundle3,
             fruitBundle4
@@ -392,4 +393,4 @@ List<CategoryModel> categories = [
         title: "Romantic Dinners",
         bundles: []
     ),
-]
+];

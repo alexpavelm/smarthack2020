@@ -44,7 +44,7 @@ class InitLayer extends StatelessWidget {
         theme: ThemeData(
           primaryColor: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
-          fontFamily: "Nonito"
+          fontFamily: "Nunito"
         ),
         home: MultiBlocProvider(
           providers: [

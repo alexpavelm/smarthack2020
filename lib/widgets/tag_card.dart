@@ -11,33 +11,36 @@ class TagCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(40),
-      child: Stack(
-        children: [
-          Container(
-            width: adaptiveWidth(900),
-            height: adaptiveHeight(190),
-            decoration: new BoxDecoration(
-              color: const Color(0xff7c94b6),
-              image: new DecorationImage(
-                fit: BoxFit.cover,
-                image: new AssetImage(image),
+    return Padding(
+      padding: EdgeInsets.only(bottom: adaptiveHeight(30)),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(40),
+        child: Stack(
+          children: [
+            Container(
+              width: adaptiveWidth(900),
+              height: adaptiveHeight(190),
+              decoration: new BoxDecoration(
+                color: const Color(0xff7c94b6),
+                image: new DecorationImage(
+                  fit: BoxFit.cover,
+                  image: new AssetImage(image),
+                ),
               ),
             ),
-          ),
-          Positioned(
-            bottom: adaptiveHeight(40),
-            left: adaptiveWidth(100),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(title, style: AppStyle.categoryWhiteTitle),
-                Text(subtitle, style: AppStyle.greenSubtitle,)
-              ],
-            ),
-          )
-        ],
+            Positioned(
+              bottom: adaptiveHeight(40),
+              left: adaptiveWidth(100),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title, style: AppStyle.categoryWhiteTitle),
+                  Text(subtitle, style: AppStyle.greenSubtitle,)
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

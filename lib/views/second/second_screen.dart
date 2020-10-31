@@ -44,17 +44,17 @@ class _SecondScreenState extends State<SecondScreen> {
         Padding(
           padding: EdgeInsets.only(left: adaptiveWidth(90), right: adaptiveWidth(90)),
           child: Container(
-            height: adaptiveHeight(300),
+            height: adaptiveWidth(300),
             child: new ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                SmallBundleCard(image: '', title: 'Fruit Pack'),
+                SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Fruit Pack'),
                 horizontalSpace(30),
-                SmallBundleCard(image: '', title: 'Veggies'),
+                SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Veggies'),
                 horizontalSpace(30),
-                SmallBundleCard(image: '', title: 'Meat & Fish'),
+                SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Meat & Fish'),
                 horizontalSpace(30),
-                SmallBundleCard(image: '', title: 'Fruit Pack'),
+                SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Fruit Pack'),
               ]
             ),
           ),

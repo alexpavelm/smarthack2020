@@ -74,7 +74,7 @@ class _SecondScreenState extends State<SecondScreen> {
         ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: [CategoryModel(title: "Essentials", subtitle: "Wild variety for wild tastes", bundles: [fruitBundle], image: "assets/images/essentials.jpg")].map((e) => _OpenContainerWrapper(
+          children: [CategoryModel(title: "Essentials", subtitle: "Wild variety for wild tastes", bundles: [fruitBundle1], image: "assets/images/essentials.jpg")].map((e) => _OpenContainerWrapper(
             categoryModel: e,
             transitionType: _transitionType,
             closedBuilder: (BuildContext _, VoidCallback openContainer) {

@@ -14,4 +14,5 @@ class AppColor {
   static const Color google = Color(0xffe34f33);
 
   static const Color lightGreen = Color(0xff16b669);
+
 }

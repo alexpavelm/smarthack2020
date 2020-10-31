@@ -12,6 +12,10 @@ abstract class AppStyle {
   static TextStyle categoryWhiteSubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: Colors.white);
   static TextStyle greenSubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: AppColor.lightGreen);
   static TextStyle smallBundleTitle= TextStyle(fontSize: adaptiveFont(40), fontWeight: FontWeight.w900, color: Colors.black);
+  static TextStyle bigBundleTitle= TextStyle(fontSize: adaptiveFont(75), fontWeight: FontWeight.w900, color: Colors.white);
+  static TextStyle bigBundleSubtitle= TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: AppColor.lightGreen);
+  static TextStyle bundleTag= TextStyle(fontSize: adaptiveFont(33), fontWeight: FontWeight.w700, color: Colors.black);
+  static TextStyle bundleTagMore= TextStyle(fontSize: adaptiveFont(33), fontWeight: FontWeight.w700, color: Colors.white);
 
   static TextStyle loginTitle = TextStyle(fontSize: ScreenUtil().setSp(110), color: AppColor.black);
   static TextStyle whiteTitle = TextStyle(fontSize: ScreenUtil().setSp(110), color: AppColor.white);

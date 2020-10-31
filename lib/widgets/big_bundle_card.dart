@@ -52,7 +52,7 @@ class BigBundleCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Container(
-                  width: adaptiveWidth(400),
+                  width: adaptiveWidth(500),
                   height: adaptiveWidth(200),
                   child: Wrap(
                         children: [...bundleModel.objects.take(3).map((e) => Padding(

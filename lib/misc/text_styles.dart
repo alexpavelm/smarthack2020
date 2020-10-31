@@ -9,7 +9,8 @@ abstract class AppStyle {
   static TextStyle categoryWhiteTitle = TextStyle(fontSize: adaptiveFont(60), fontWeight: FontWeight.w900, color: Colors.white);
   static TextStyle categoryBlackTitle = TextStyle(fontSize: adaptiveFont(60), fontWeight: FontWeight.w900, color: Colors.black);
   static TextStyle pageTitle = TextStyle(fontSize: adaptiveFont(75), fontWeight: FontWeight.w900, color: Colors.black);
-  static TextStyle categoryWhiteSubtitle= TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: Colors.white);
+  static TextStyle categoryWhiteSubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: Colors.white);
+  static TextStyle greenSubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: AppColor.lightGreen);
 
   static TextStyle loginTitle = TextStyle(fontSize: ScreenUtil().setSp(110), color: AppColor.black);
   static TextStyle whiteTitle = TextStyle(fontSize: ScreenUtil().setSp(110), color: AppColor.white);

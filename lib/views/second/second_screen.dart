@@ -12,17 +12,28 @@ class _SecondScreenState extends State<SecondScreen> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        verticalSpace(50),
-        Text('Explore'
-        ),
-        verticalSpace(40),
+        verticalSpace(90),
         Padding(
-          padding: const EdgeInsets.only(left: 8.0),
-          child: Text('For You'
+          padding: EdgeInsets.only(left: adaptiveWidth(50)),
+          child: Text('Explore',
+              style: AppStyle.pageTitle,
           ),
         ),
-        Text('Based on your bundles'),
+        verticalSpace(60),
+        Padding(
+          padding: EdgeInsets.only(left: adaptiveWidth(50)),
+          child: Text('For You',
+            style: AppStyle.categoryBlackTitle,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.only(left: adaptiveWidth(50)),
+          child: Text('Based on your bundles',
+          style: AppStyle.greenSubtitle),
+        ),
         Container(
           height: 80.0,
           child: new ListView(
@@ -40,12 +51,15 @@ class _SecondScreenState extends State<SecondScreen> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.only(left: adaptiveWidth(100), right: adaptiveWidth(100)),
           child: Divider(
-            height: ScreenUtil().setHeight(30),
+            height: ScreenUtil().setHeight(60),
+            thickness: 1,
           ),
         ),
-        Text('Categories'),
+        Text('Categories',
+          style: AppStyle.categoryBlackTitle,
+        ),
       ],
     );
   }

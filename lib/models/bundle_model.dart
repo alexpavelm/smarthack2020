@@ -5,8 +5,9 @@ class BundleModel {
   final String subtitle;
   final String price;
   final String image;
+  bool isSubscribed;
   final List<BundleObjectModel> objects;
 
-  BundleModel({this.title, this.subtitle, this.image, this.objects, this.price});
+  BundleModel({this.title, this.subtitle, this.image, this.objects, this.price, this.isSubscribed});
 
 }

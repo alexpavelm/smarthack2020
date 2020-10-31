@@ -39,7 +39,7 @@ class BigBundleCard extends StatelessWidget {
                   style: AppStyle.bigBundleTitle.copyWith(height: .6),
                 ),
                 Text(
-                  bundleModel.subtitle,
+                  bundleModel.isSubscribed ? bundleModel.subtitle : "\$${bundleModel.price} a week",
                   style: AppStyle.bigBundleSubtitle,
                 )
               ],

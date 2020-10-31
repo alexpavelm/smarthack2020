@@ -38,7 +38,7 @@ class _SecondScreenState extends State<SecondScreen> {
         Padding(
           padding: EdgeInsets.only(left: adaptiveWidth(90), right: adaptiveWidth(90)),
           child: Container(
-            height: adaptiveWidth(300),
+            height: adaptiveHeight(300),
             child: new ListView(
               scrollDirection: Axis.horizontal,
               children: [

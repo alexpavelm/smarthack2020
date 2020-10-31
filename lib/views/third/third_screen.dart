@@ -24,13 +24,11 @@ class _ThirdScreenState extends State<ThirdScreen> {
           verticalSpace(60),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              BigBundleCard(bundleModel: fruitBundle1),
-              verticalSpace(60),
-              BigBundleCard(bundleModel: fruitBundle2),
-              verticalSpace(60),
-              BigBundleCard(bundleModel: fruitBundle3),
-            ]
+            children: myBundles.map((e) => Padding(
+              padding: EdgeInsets.only(bottom: adaptiveWidth(60)),
+              child: BigBundleCard(bundleModel: e,),
+            )).toList(
+            )
           ),
           Padding(
             padding: EdgeInsets.only(left: adaptiveWidth(60), right: adaptiveWidth(60)),

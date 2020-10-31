@@ -1,0 +1,38 @@
+name: baseapp
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.3
+  firebase_auth: ^0.18.0+1
+  cloud_firestore: ^0.14.0+2
+  bloc: ^4.0.0
+  flutter_bloc: ^4.0.0
+  firebase_core: ^0.5.0
+  equatable: ^1.2.5
+  cached_network_image: ^2.2.0+1
+  expandable: ^4.1.4
+  flutter_screenutil: ^3.1.1
+  font_awesome_flutter: ^8.10.0
+  url_launcher: ^5.7.2
+  step_progress_indicator: ^0.2.4+7
+  rxdart: ^0.24.1
+  shared_preferences: ^0.5.12+2
+  http: ^0.12.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true

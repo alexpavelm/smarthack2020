@@ -43,19 +43,23 @@ class _ExploreScreenState extends State<ExploreScreen> {
         verticalSpace(30),
         Container(
           height: adaptiveWidth(300),
-          child: new ListView(
-            scrollDirection: Axis.horizontal,
-            children: [ //TODO lista cu onClick
-              horizontalSpace(90),
-              SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Fruit Pack'),
-              horizontalSpace(30),
-              SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Veggies'),
-              horizontalSpace(30),
-              SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Meat & Fish'),
-              horizontalSpace(30),
-              SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Fruit Pack'),
-              horizontalSpace(90),
-            ]
+          child: Padding(
+            padding:  EdgeInsets.only(
+                left: adaptiveWidth(90),
+                right: adaptiveWidth(90)
+            ),
+            child: new ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                ...forYouBundles.map((e) => Padding(
+                  padding: EdgeInsets.only(
+                      left: adaptiveWidth(15),
+                      right: adaptiveWidth(15)
+                  ),
+                  child: SmallBundleCard(bundleModel: e,),
+                )).toList()
+              ]
+            ),
           ),
         ),
         Padding(

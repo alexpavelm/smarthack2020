@@ -117,20 +117,21 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
                             fontSize: adaptiveFont(45),
+                            color: AppColor.lightGrey,
                           ),
                           decoration: InputDecoration(
                             labelText: "Username",
                             labelStyle: TextStyle(
-                              color: Color(0xFF7D8699),
+                              color: AppColor.lightGrey,
                               fontSize: adaptiveFont(40),
                               fontWeight: FontWeight.w400,
                             ),
                             focusedBorder: UnderlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Colors.indigoAccent, width: 2)),
+                                    BorderSide(color: AppColor.lightGrey, width: 2)),
                             enabledBorder: UnderlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Color(0xFFF0F0F0), width: 2)),
+                                    BorderSide(color: AppColor.lightGrey, width: 2)),
                           ),
                           keyboardType: TextInputType.emailAddress,
                           autocorrect: false,
@@ -140,20 +141,21 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
                             fontSize: adaptiveFont(45),
+                            color: AppColor.lightGrey,
                           ),
                           decoration: InputDecoration(
                             labelText: "Password",
                             labelStyle: TextStyle(
-                              color: Color(0xFF7D8699),
+                              color: AppColor.lightGrey,
                               fontSize: adaptiveFont(40),
                               fontWeight: FontWeight.w400,
                             ),
                             focusedBorder: UnderlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Colors.indigoAccent, width: 2)),
+                                    BorderSide(color: AppColor.lightGrey, width: 2)),
                             enabledBorder: UnderlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Color(0xFFF0F0F0), width: 2)),
+                                    BorderSide(color: AppColor.lightGrey, width: 2)),
                           ),
                           obscureText: true,
                           autocorrect: false,

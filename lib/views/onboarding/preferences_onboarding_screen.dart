@@ -34,6 +34,7 @@ class _PreferencesOnBoardingScreenState
         children: [
           Container(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   children: [
@@ -56,12 +57,16 @@ class _PreferencesOnBoardingScreenState
                         ...preferences1.map((e) => SmallClickableCard(image: e.image, title: e.title)).toList(),
                   ],
                 ),
-                verticalSpace(50),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                Column(
                   children: [
-                    button(currentStep),
-                    horizontalSpace(50),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        button(1),
+                        horizontalSpace(50),
+                      ],
+                    ),
+                    verticalSpace(100),
                   ],
                 ),
               ],
@@ -69,6 +74,7 @@ class _PreferencesOnBoardingScreenState
           ),
           Container(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   children: [
@@ -91,12 +97,16 @@ class _PreferencesOnBoardingScreenState
                     ...preferences2.map((e) => SmallClickableCard(image: e.image, title: e.title)).toList(),
                   ],
                 ),
-                verticalSpace(50),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                Column(
                   children: [
-                    button(currentStep),
-                    horizontalSpace(50),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        button(2),
+                        horizontalSpace(50),
+                      ],
+                    ),
+                    verticalSpace(100),
                   ],
                 ),
               ],
@@ -104,6 +114,7 @@ class _PreferencesOnBoardingScreenState
           ),
           Container(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   children: [
@@ -138,11 +149,16 @@ class _PreferencesOnBoardingScreenState
                   ],
                 ),
                 verticalSpace(50),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                Column(
                   children: [
-                    button(currentStep),
-                    horizontalSpace(50),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        button(3),
+                        horizontalSpace(50),
+                      ],
+                    ),
+                    verticalSpace(100),
                   ],
                 ),
               ],

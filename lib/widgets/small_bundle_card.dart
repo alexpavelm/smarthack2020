@@ -42,7 +42,7 @@ class SmallBundleCard extends StatelessWidget {
                   gradient: LinearGradient(
                     begin: Alignment.bottomCenter,
                     end: Alignment.topCenter,
-                    colors: [Colors.white.withOpacity(0.7), Colors.transparent],
+                    colors: [Colors.black.withOpacity(0.7), Colors.transparent],
                     stops: [0.1, 1],
                   ),
                 ),
@@ -64,7 +64,7 @@ class SmallBundleCard extends StatelessWidget {
                       children: [
                         Text(
                           bundleModel.title,
-                          style: AppStyle.smallBundleTitle,
+                          style: AppStyle.smallBundleTitle.copyWith(color: Colors.white, height: 1),
                           overflow: TextOverflow.clip,
                         ),
                       ],

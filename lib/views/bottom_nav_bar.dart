@@ -4,6 +4,7 @@ import 'package:baseapp/views/category/category_screen.dart';
 import 'package:baseapp/views/trending/trending_screen.dart';
 import 'package:baseapp/views/my_bundles/my_bundles_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BottomNavBar extends StatefulWidget {
   @override
@@ -29,13 +30,13 @@ class _BottomNavBarState extends State<BottomNavBar> {
             bottomNavigationBar: TabBar(
               tabs: [
                 Tab(
-                  icon: Icon(Icons.list),
+                  icon: Icon(FontAwesomeIcons.chartLine),
                 ),
                 Tab(
-                  icon: Icon(Icons.star),
+                  icon: Icon(FontAwesomeIcons.compass),
                 ),
                 Tab(
-                  icon: Icon(Icons.web),
+                  icon: Icon(FontAwesomeIcons.shoppingCart),
                 ),
               ],
               labelColor: AppColor.lightGreen,

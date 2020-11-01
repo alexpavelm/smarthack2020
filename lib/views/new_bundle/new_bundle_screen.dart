@@ -3,6 +3,7 @@ import 'package:baseapp/misc/fake_backend.dart';
 import 'package:baseapp/misc/text_styles.dart';
 import 'package:baseapp/misc/utils.dart';
 import 'package:baseapp/models/bundle_model.dart';
+import 'package:baseapp/widgets/big_bundle_card.dart';
 import 'package:baseapp/widgets/small_tag_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -117,7 +118,15 @@ class _NewBundleScreenState extends State<NewBundleScreen> {
               'More bundles like it...',
               style: AppStyle.categoryBlackTitle,
             ),
-            verticalSpace(60),
+            verticalSpace(30),
+            Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  BigBundleCard(bundleModel: fruitBundle3),
+                  verticalSpace(60),
+                  BigBundleCard(bundleModel: fruitBundle4),
+                  verticalSpace(60),
+                ]),
           ],
         ),
       ),

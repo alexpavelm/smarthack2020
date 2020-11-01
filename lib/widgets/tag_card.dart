@@ -51,7 +51,7 @@ class _TagCardState extends State<TagCard> {
                       Text(widget.bundleObjectModel.title,
                           style: AppStyle.categoryWhiteTitle),
                       Text(
-                        widget.bundleObjectModel.shouldKeep == null || widget.bundleObjectModel.shouldKeep ? widget.bundleObjectModel.subtitle : "You won't receive this anymore",
+                        widget.bundleObjectModel.shouldKeep == null || widget.bundleObjectModel.shouldKeep ? widget.bundleObjectModel.subtitle : "You won't receive this next time",
                         style: widget.bundleObjectModel.shouldKeep == null ||
                                 widget.bundleObjectModel.shouldKeep
                             ? AppStyle.greenSubtitle

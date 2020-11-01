@@ -98,11 +98,10 @@ class _BundlePageState extends State<BundlePage> {
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  BigBundleCard(bundleModel: fruitBundle1),
+                  BigBundleCard(bundleModel: fruitBundle3),
                   verticalSpace(60),
-                  BigBundleCard(bundleModel: fruitBundle1),
+                  BigBundleCard(bundleModel: fruitBundle4),
                   verticalSpace(60),
-                  BigBundleCard(bundleModel: fruitBundle1),
                 ]),
           ),
         ],

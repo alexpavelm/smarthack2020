@@ -4,7 +4,9 @@ import 'package:baseapp/misc/colors.dart';
 import 'package:baseapp/misc/fake_backend.dart';
 import 'package:baseapp/misc/text_styles.dart';
 import 'package:baseapp/misc/utils.dart';
+import 'package:baseapp/views/login/login_screen.dart';
 import 'package:baseapp/widgets/big_bundle_card.dart';
+import 'package:baseapp/widgets/big_bundle_subscribe_card.dart';
 import 'package:baseapp/widgets/small_clickable_card.dart';
 import 'package:baseapp/widgets/small_tag_card.dart';
 import 'package:flutter/material.dart';
@@ -21,6 +23,7 @@ class PreferencesOnBoardingScreen extends StatefulWidget {
 class _PreferencesOnBoardingScreenState
     extends State<PreferencesOnBoardingScreen> {
   int currentStep = 1;
+  bool isLoggedIn = false;
   final controller = PageController(initialPage: 0);
 
   @override
@@ -50,7 +53,7 @@ class _PreferencesOnBoardingScreenState
                       ],
                     ),
                         verticalSpace(50),
-                        ...fruitBundle1.objects.map((e) => SmallClickableCard(image: e.image, title: e.title)).toList(),
+                        ...preferences1.map((e) => SmallClickableCard(image: e.image, title: e.title)).toList(),
                   ],
                 ),
                 verticalSpace(50),
@@ -85,7 +88,7 @@ class _PreferencesOnBoardingScreenState
                       ],
                     ),
                     verticalSpace(50),
-                    ...fruitBundle1.objects.map((e) => SmallClickableCard(image: e.image, title: e.title)).toList(),
+                    ...preferences2.map((e) => SmallClickableCard(image: e.image, title: e.title)).toList(),
                   ],
                 ),
                 verticalSpace(50),
@@ -122,7 +125,15 @@ class _PreferencesOnBoardingScreenState
                     verticalSpace(50),
                     ...categories[0].bundles.take(3).map((e) => Padding(
                       padding: EdgeInsets.only(bottom: adaptiveWidth(30)),
-                      child: BigBundleCard(bundleModel: e,),
+                      child: BigBundleSubscribeCard(bundleModel: e, onTap: () {
+                        if (!isLoggedIn) {
+                          isLoggedIn = true;
+                          var bloc = BlocProvider.of<AuthenticationBloc>(context);
+                          Navigator.of(context).push(
+                              MaterialPageRoute(builder: (context) => LoginScreen(bloc: bloc),
+                          ),);
+                        }
+                      },),
                     )).toList(),
                   ],
                 ),

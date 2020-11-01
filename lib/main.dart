@@ -84,14 +84,14 @@ class _MainScreenState extends State<MainScreen> {
         if (state is OnBoardingPersonality) {
           return PersonalityOnBoardingScreen();
         }
-        if (state is OnBoardingPreferences) {
+        if (state is OnBoardingPreferences || state is LoggingIn || state is AuthenticatedOnBoard) {
           return PreferencesOnBoardingScreen();
-        }
-        if (state is Unauthenticated || state is LoggingIn) {
-          return LoginScreen();
         }
         if (state is Authenticated) {
           return BottomNavBar();
+        }
+        if (state is Unauthenticated) {
+          return FirstLaunchScreen();
         }
         return LoadingScreen();
       },

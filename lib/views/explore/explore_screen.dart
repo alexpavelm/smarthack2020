@@ -43,23 +43,18 @@ class _ExploreScreenState extends State<ExploreScreen> {
         verticalSpace(30),
         Container(
           height: adaptiveWidth(300),
-          child: Padding(
-            padding:  EdgeInsets.only(
-                left: adaptiveWidth(90),
-                right: adaptiveWidth(90)
-            ),
-            child: new ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                ...forYouBundles.map((e) => Padding(
-                  padding: EdgeInsets.only(
-                      left: adaptiveWidth(15),
-                      right: adaptiveWidth(15)
-                  ),
-                  child: SmallBundleCard(bundleModel: e,),
-                )).toList()
-              ]
-            ),
+          child: new ListView(
+            scrollDirection: Axis.horizontal,
+            children: [
+              horizontalSpace(90),
+              ...forYouBundles.map((e) => Padding(
+                padding: EdgeInsets.only(
+                    right: adaptiveWidth(30)
+                ),
+                child: SmallBundleCard(bundleModel: e,),
+              )).toList(),
+              horizontalSpace(90),
+            ]
           ),
         ),
         Padding(

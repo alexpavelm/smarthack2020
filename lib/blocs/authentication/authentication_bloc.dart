@@ -19,8 +19,8 @@ class AuthenticationBloc
 
   @override
   Stream<AuthenticationState> mapEventToState(
-      AuthenticationEvent event,
-      ) async* {
+    AuthenticationEvent event,
+  ) async* {
     if (event is AppStarted) {
       yield* _mapAppStartedToState();
     } else if (event is LoggedIn) {
@@ -41,7 +41,7 @@ class AuthenticationBloc
     if (isSignedIn) {
       yield Authenticated();
     } else {
-      if (await _userRepository.isFirstTime()) {
+      if (!await _userRepository.isFirstTime()) {
         _userRepository.setUserFirstTime();
         yield FirstLaunch();
       } else {
@@ -51,14 +51,14 @@ class AuthenticationBloc
   }
 
   Stream<AuthenticationState> _mapFinishedOnBoardingToState() async* {
-    yield Unauthenticated();
+    yield Authenticated();
   }
 
   Stream<AuthenticationState> _mapLoggedInToState() async* {
     yield LoggingIn();
     UserCredential userCredential = await _userRepository.signInAnonymously();
     if (userCredential != null) {
-      yield Authenticated();
+      yield AuthenticatedOnBoard();
     }
   }
 

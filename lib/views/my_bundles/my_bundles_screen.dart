@@ -5,12 +5,12 @@ import 'package:baseapp/widgets/big_bundle_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 
-class ThirdScreen extends StatefulWidget {
+class MyBundlesScreen extends StatefulWidget {
   @override
-  _ThirdScreenState createState() => _ThirdScreenState();
+  _MyBundlesScreenState createState() => _MyBundlesScreenState();
 }
 
-class _ThirdScreenState extends State<ThirdScreen> {
+class _MyBundlesScreenState extends State<MyBundlesScreen> {
   @override
   Widget build(BuildContext context) {
     return Padding(

@@ -1,3 +1,4 @@
+import 'package:baseapp/misc/fake_backend.dart';
 import 'package:baseapp/misc/text_styles.dart';
 import 'package:baseapp/misc/utils.dart';
 import 'package:baseapp/models/bundle_model.dart';
@@ -18,9 +19,9 @@ class BigBundleCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        bundleModel.isSubscribed
+        myBundles.contains(bundleModel)
         ? Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => NewBundleScreen(bundleModel)),
+          MaterialPageRoute(builder: (context) => BundlePage(bundleModel)),
         )
        : Navigator.of(context).push(
           MaterialPageRoute(builder: (context) => NewBundleScreen(bundleModel)),
@@ -51,7 +52,7 @@ class BigBundleCard extends StatelessWidget {
                     style: AppStyle.bigBundleTitle.copyWith(height: .6),
                   ),
                   Text(
-                    bundleModel.isSubscribed ? bundleModel.subtitle : "\$${bundleModel.price} a week",
+                    myBundles.contains(bundleModel) ? bundleModel.subtitle : "\$${bundleModel.price} a week",
                     style: AppStyle.bigBundleSubtitle,
                   )
                 ],

@@ -22,28 +22,57 @@ class _BundlePageState extends State<BundlePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: EdgeInsets.only(left: adaptiveWidth(90), right: adaptiveWidth(90)),
-        child: ListView(
-          children: [
-            verticalSpace(90),
-            Row(
+      body: ListView(
+        children: [
+          verticalSpace(90),
+          Padding(
+            padding: EdgeInsets.only(
+                left: adaptiveWidth(90), right: adaptiveWidth(90)),
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(this.widget.bundleModel.title,
+                Text(
+                  this.widget.bundleModel.title,
                   style: AppStyle.pageTitle,
                 ),
                 Icon(Icons.settings),
               ],
             ),
-            verticalSpace(60),
-            ...this.widget.bundleModel.objects.map((e) => TagCard(image: e.image, title: e.title, subtitle: e.subtitle)),
-            verticalSpace(30),
-            Text('For next week...',
+          ),
+          verticalSpace(60),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                children: this
+                    .widget
+                    .bundleModel
+                    .objects
+                    .map((e) => TagCard(
+                          bundleObjectModel: e, onRemove: () {
+                            setState(() {
+                              widget.bundleModel.objects.remove(e);
+                            });
+                },
+                        ))
+                    .toList(),
+              ),
+            ],
+          ),
+          verticalSpace(30),
+          Padding(
+            padding: EdgeInsets.only(
+                left: adaptiveWidth(90), right: adaptiveWidth(90)),
+            child: Text(
+              'For next week...',
               style: AppStyle.categoryBlackTitle,
             ),
-            verticalSpace(30),
-            Wrap(
+          ),
+          verticalSpace(30),
+          Padding(
+            padding: EdgeInsets.only(
+                left: adaptiveWidth(90), right: adaptiveWidth(90)),
+            child: Wrap(
               children: [
                 BundleSuggestionContainer(title: 'Make it sweeter'),
                 BundleSuggestionContainer(title: 'Make it lemony'),
@@ -52,12 +81,21 @@ class _BundlePageState extends State<BundlePage> {
                 BundleSuggestionContainer(title: 'Repeat'),
               ],
             ),
-            verticalSpace(30),
-            Text('More bundles like it...',
+          ),
+          verticalSpace(30),
+          Padding(
+            padding: EdgeInsets.only(
+                left: adaptiveWidth(90), right: adaptiveWidth(90)),
+            child: Text(
+              'More bundles like it...',
               style: AppStyle.categoryBlackTitle,
             ),
-            verticalSpace(30),
-            Column(
+          ),
+          verticalSpace(30),
+          Padding(
+            padding: EdgeInsets.only(
+                left: adaptiveWidth(90), right: adaptiveWidth(90)),
+            child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   BigBundleCard(bundleModel: fruitBundle1),
@@ -65,10 +103,9 @@ class _BundlePageState extends State<BundlePage> {
                   BigBundleCard(bundleModel: fruitBundle1),
                   verticalSpace(60),
                   BigBundleCard(bundleModel: fruitBundle1),
-                ]
-            ),
-          ],
-        ),
+                ]),
+          ),
+        ],
       ),
     );
   }

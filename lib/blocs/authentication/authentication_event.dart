@@ -11,6 +11,10 @@ class AppStarted extends AuthenticationEvent {}
 
 class FinishedOnBoarding extends AuthenticationEvent {}
 
+class GoToPersonalityOnBoarding extends AuthenticationEvent {}
+
+class GoToPreferencesOnBoarding extends AuthenticationEvent {}
+
 class LoggedIn extends AuthenticationEvent {}
 
 class LoggedOut extends AuthenticationEvent {}

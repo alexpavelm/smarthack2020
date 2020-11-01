@@ -3,12 +3,12 @@ import 'package:baseapp/models/bundle_object_model.dart';
 import 'package:baseapp/models/category_model.dart';
 import 'package:flutter/material.dart';
 
+
 BundleModel fruitBundle1 = 
   BundleModel(
     title: "Fruit Pack",
     subtitle: "Ships next in 3 days",
     price: "9.99",
-    isSubscribed: true,
     image: "assets/images/fruitbundle.png",
     objects: [
       BundleObjectModel(
@@ -61,7 +61,6 @@ BundleModel fruitBundle2 =
     title: "Worldwide Exotics",
     subtitle: "Ships next in 3 days",
     price: "19.99",
-    isSubscribed: true,
     image: "assets/images/fruitbundle.png",
     objects: [
       BundleObjectModel(
@@ -101,7 +100,6 @@ BundleModel fruitBundle3 = BundleModel(
     title: "Vitamin C Booster",
     subtitle: "Ships next in 3 days",
     price: "10.99",
-    isSubscribed: true,
     image: "assets/images/fruitbundle.png",
     objects: [
       BundleObjectModel(
@@ -146,7 +144,6 @@ BundleModel fruitBundle4 = BundleModel(
     title: "Peel 'Em Off",
     subtitle: "Ships next in 3 days",
     price: "12.99",
-    isSubscribed: true,
     image: "assets/images/fruitbundle.png",
     objects: [
       BundleObjectModel(
@@ -186,7 +183,6 @@ BundleModel veggieBundle1 = BundleModel(
     title: "Veggie Pack",
     subtitle: "Ships next in 3 days",
     price: "5.99",
-    isSubscribed: true,
     image: "assets/images/fruitbundle.png",
     objects: [
       BundleObjectModel(
@@ -226,7 +222,6 @@ BundleModel veggieBundle2 = BundleModel(
     title: "Salad Essentials",
     subtitle: "Ships next in 3 days",
     price: "7.99",
-    isSubscribed: true,
     image: "assets/images/fruitbundle.png",
     objects: [
       BundleObjectModel(
@@ -272,7 +267,6 @@ BundleModel veggieBundle3 = BundleModel(
     title: "Veggie Soup Mix",
     subtitle: "Ships next in 3 days",
     price: "6.99",
-    isSubscribed: true,
     image: "assets/images/fruitbundle.png",
     objects: [
       BundleObjectModel(
@@ -318,7 +312,6 @@ BundleModel veggieBundle4 = BundleModel(
     title: "Ready for Pickling",
     subtitle: "Ships next in 3 days",
     price: "8.99",
-    isSubscribed: true,
     image: "assets/images/fruitbundle.png",
     objects: [
       BundleObjectModel(
@@ -408,3 +401,5 @@ List<CategoryModel> categories = [
       subtitle: "Wild variety for wild tastes",
     ),
 ];
+
+List<BundleModel> myBundles = [fruitBundle1, fruitBundle2];

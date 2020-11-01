@@ -76,7 +76,7 @@ class _PersonalityOnBoardingScreenState
               children: [
                 Image.asset("assets/images/onboarding_nerd.png"),
                 Image.asset("assets/images/onboarding_cook.png"),
-                Image.asset("assets/images/onboarding_gentle.png"),
+                Image.asset("assets/images/onboarding_dilettante.png"),
                 Image.asset("assets/images/onboarding_gentle.png"),
               ],
             ),

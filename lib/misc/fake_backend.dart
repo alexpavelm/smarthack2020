@@ -356,7 +356,7 @@ List<CategoryModel> categories = [
       fruitBundle3,
       fruitBundle4
     ],
-    image: "assets/images/fruitbundle.png",
+    image: "assets/images/fruit_essentials.jpg",
     subtitle: "Wild variety for wild tastes",
   ),
   CategoryModel(
@@ -402,6 +402,6 @@ List<CategoryModel> categories = [
   ),
 ];
 
-List<BundleModel> myBundles = [fruitBundle1, fruitBundle2];
+List<BundleModel> myBundles = [];
 
 List<BundleModel> forYouBundles = [fruitBundle4, fruitBundle2, fruitBundle1, fruitBundle3];

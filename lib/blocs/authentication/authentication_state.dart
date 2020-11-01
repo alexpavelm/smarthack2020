@@ -19,4 +19,6 @@ class OnBoardingPreferences extends AuthenticationState {}
 
 class Authenticated extends AuthenticationState {}
 
+class AuthenticatedOnBoard extends AuthenticationState {}
+
 class Unauthenticated extends AuthenticationState {}

@@ -41,7 +41,7 @@ class AuthenticationBloc
     if (isSignedIn) {
       yield Authenticated();
     } else {
-      if (!await _userRepository.isFirstTime()) {
+      if (await _userRepository.isFirstTime()) {
         _userRepository.setUserFirstTime();
         yield FirstLaunch();
       } else {
@@ -55,6 +55,7 @@ class AuthenticationBloc
   }
 
   Stream<AuthenticationState> _mapLoggedInToState() async* {
+    yield LoggingIn();
     UserCredential userCredential = await _userRepository.signInAnonymously();
     if (userCredential != null) {
       yield Authenticated();

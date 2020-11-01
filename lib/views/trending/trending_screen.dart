@@ -33,9 +33,9 @@ class _TrendingScreenState extends State<TrendingScreen> {
         Padding(
           padding: EdgeInsets.only(left: adaptiveWidth(65), right: adaptiveWidth(65)),
           child: Wrap(
-            children: [1,2,3,4,5,6,7,8,9,10,11,12].map((e) => Padding(
+            children: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21].map((e) => Padding(
               padding: EdgeInsets.all(adaptiveWidth(25)),
-              child: TrendCard(image: "assets/images/essentials.jpg",),
+              child: TrendCard(image: "assets/images/s$e.png",),
             )).toList(),
           ),
         ),

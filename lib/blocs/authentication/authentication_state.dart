@@ -11,6 +11,10 @@ class Uninitialized extends AuthenticationState {}
 
 class FirstLaunch extends AuthenticationState {}
 
+class OnBoardingPersonality extends AuthenticationState {}
+
+class OnBoardingPreferences extends AuthenticationState {}
+
 class Authenticated extends AuthenticationState {}
 
 class Unauthenticated extends AuthenticationState {}

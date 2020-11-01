@@ -27,6 +27,10 @@ class AuthenticationBloc
       yield* _mapLoggedInToState();
     } else if (event is LoggedOut) {
       yield* _mapLoggedOutToState();
+    } else if (event is GoToPersonalityOnBoarding) {
+      yield* _mapGoToPersonalityOnBoardingToState();
+    } else if (event is GoToPreferencesOnBoarding) {
+      yield* _mapGoToPreferencesOnBoardingToState();
     } else if (event is FinishedOnBoarding) {
       yield* _mapFinishedOnBoardingToState();
     }
@@ -60,5 +64,13 @@ class AuthenticationBloc
   Stream<AuthenticationState> _mapLoggedOutToState() async* {
     _userRepository.signOut();
     yield Unauthenticated();
+  }
+
+  Stream<AuthenticationState> _mapGoToPersonalityOnBoardingToState() async* {
+    yield OnBoardingPersonality();
+  }
+
+  Stream<AuthenticationState> _mapGoToPreferencesOnBoardingToState() async* {
+    yield OnBoardingPreferences();
   }
 }

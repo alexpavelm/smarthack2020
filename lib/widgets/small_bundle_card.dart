@@ -15,11 +15,11 @@ class SmallBundleCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        forYouBundles.contains(bundleModel)
+        myBundles.contains(bundleModel)
             ? Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => NewBundleScreen(bundleModel)),
+            MaterialPageRoute(builder: (context) => BundlePage(bundleModel)),
         ) : Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => BundlePage(bundleModel)),
+          MaterialPageRoute(builder: (context) => NewBundleScreen(bundleModel)),
         );
       },
 

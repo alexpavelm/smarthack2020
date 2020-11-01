@@ -3,18 +3,18 @@ import 'package:baseapp/misc/fake_backend.dart';
 import 'package:baseapp/misc/text_styles.dart';
 import 'package:baseapp/misc/utils.dart';
 import 'package:baseapp/models/category_model.dart';
-import 'package:baseapp/views/fourth/fourth_screen.dart';
+import 'package:baseapp/views/category/category_screen.dart';
 import 'package:baseapp/widgets/category_card.dart';
 import 'package:baseapp/widgets/small_bundle_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 
-class SecondScreen extends StatefulWidget {
+class ExploreScreen extends StatefulWidget {
   @override
-  _SecondScreenState createState() => _SecondScreenState();
+  _ExploreScreenState createState() => _ExploreScreenState();
 }
 
-class _SecondScreenState extends State<SecondScreen> {
+class _ExploreScreenState extends State<ExploreScreen> {
   ContainerTransitionType _transitionType = ContainerTransitionType.fade;
 
   @override
@@ -37,26 +37,25 @@ class _SecondScreenState extends State<SecondScreen> {
         ),
         Padding(
           padding: EdgeInsets.only(left: adaptiveWidth(90)),
-          child: Text('Based on your bundles',
+          child: Text('Based on your preferences',
           style: AppStyle.greenSubtitle),
         ),
         verticalSpace(30),
-        Padding(
-          padding: EdgeInsets.only(left: adaptiveWidth(90), right: adaptiveWidth(90)),
-          child: Container(
-            height: adaptiveWidth(300),
-            child: new ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Fruit Pack'),
-                horizontalSpace(30),
-                SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Veggies'),
-                horizontalSpace(30),
-                SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Meat & Fish'),
-                horizontalSpace(30),
-                SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Fruit Pack'),
-              ]
-            ),
+        Container(
+          height: adaptiveWidth(300),
+          child: new ListView(
+            scrollDirection: Axis.horizontal,
+            children: [ //TODO lista cu onClick
+              horizontalSpace(90),
+              SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Fruit Pack'),
+              horizontalSpace(30),
+              SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Veggies'),
+              horizontalSpace(30),
+              SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Meat & Fish'),
+              horizontalSpace(30),
+              SmallBundleCard(image: "assets/images/essentials.jpg", title: 'Fruit Pack'),
+              horizontalSpace(90),
+            ]
           ),
         ),
         Padding(
@@ -109,7 +108,7 @@ class _OpenContainerWrapper extends StatelessWidget {
         closedElevation: 0,
         closedColor: Theme.of(context).scaffoldBackgroundColor,
         openBuilder: (BuildContext context, VoidCallback _) {
-          return FourthScreen(categoryModel: categoryModel,);
+          return CategoryScreen(categoryModel: categoryModel,);
         },
         onClosed: onClosed,
         tappable: false,

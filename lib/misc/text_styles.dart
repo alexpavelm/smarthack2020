@@ -12,6 +12,7 @@ abstract class AppStyle {
   static TextStyle categoryWhiteSubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: Colors.white);
   static TextStyle categoryGreySubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: Colors.grey);
   static TextStyle greenSubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w500, color: AppColor.lightGreen);
+  static TextStyle redSubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w500, color: Colors.red);
   static TextStyle smallBundleTitle= TextStyle(fontSize: adaptiveFont(40), fontWeight: FontWeight.w900, color: Colors.black);
   static TextStyle suggestionTitle = TextStyle(fontSize: adaptiveFont(40), fontWeight: FontWeight.w700, color: Colors.black);
   static TextStyle bigBundleTitle= TextStyle(fontSize: adaptiveFont(75), fontWeight: FontWeight.w900, color: Colors.white);

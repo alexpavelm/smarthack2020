@@ -4,19 +4,19 @@ import 'package:baseapp/models/category_model.dart';
 import 'package:baseapp/widgets/big_bundle_card.dart';
 import 'package:flutter/material.dart';
 
-class FourthScreen extends StatefulWidget {
+class CategoryScreen extends StatefulWidget {
   final CategoryModel categoryModel;
 
-  const FourthScreen({Key key, this.categoryModel}) : super(key: key);
+  const CategoryScreen({Key key, this.categoryModel}) : super(key: key);
 
   @override
-  _FourthScreenState createState() => _FourthScreenState(categoryModel);
+  _CategoryScreenState createState() => _CategoryScreenState(categoryModel);
 }
 
-class _FourthScreenState extends State<FourthScreen> {
+class _CategoryScreenState extends State<CategoryScreen> {
   final CategoryModel categoryModel;
 
-  _FourthScreenState(this.categoryModel);
+  _CategoryScreenState(this.categoryModel);
 
   @override
   Widget build(BuildContext context) {

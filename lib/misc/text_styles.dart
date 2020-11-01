@@ -8,7 +8,10 @@ abstract class AppStyle {
 
   static TextStyle categoryWhiteTitle = TextStyle(fontSize: adaptiveFont(60), fontWeight: FontWeight.w900, color: Colors.white);
   static TextStyle categoryBlackTitle = TextStyle(fontSize: adaptiveFont(60), fontWeight: FontWeight.w900, color: Colors.black);
+  static TextStyle button = TextStyle(fontSize: adaptiveFont(50), fontWeight: FontWeight.w700, color: Colors.white);
   static TextStyle pageTitle = TextStyle(fontSize: adaptiveFont(75), fontWeight: FontWeight.w900, color: Colors.black);
+  static TextStyle appTitle = TextStyle(fontSize: adaptiveFont(250), fontWeight: FontWeight.w900, color: Colors.white);
+  static TextStyle appSubtitle = TextStyle(fontSize: adaptiveFont(120), fontWeight: FontWeight.w700, color: Colors.white);
   static TextStyle categoryWhiteSubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: Colors.white);
   static TextStyle categoryGreySubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w400, color: Colors.grey);
   static TextStyle greenSubtitle = TextStyle(fontSize: adaptiveFont(35), fontWeight: FontWeight.w500, color: AppColor.lightGreen);

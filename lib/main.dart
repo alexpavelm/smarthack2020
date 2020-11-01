@@ -5,7 +5,9 @@ import 'package:baseapp/simple_bloc_delegate.dart';
 import 'package:baseapp/views/bottom_nav_bar.dart';
 import 'package:baseapp/views/loading_screen.dart';
 import 'package:baseapp/views/login/login_screen.dart';
-import 'package:baseapp/views/onboarding/onboarding_screen.dart';
+import 'package:baseapp/views/onboarding/first_launch_screen.dart';
+import 'package:baseapp/views/onboarding/preferences_onboarding_screen.dart';
+import 'package:baseapp/views/onboarding/personality_onboarding_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -77,7 +79,13 @@ class _MainScreenState extends State<MainScreen> {
           return LoadingScreen();
         }
         if (state is FirstLaunch) {
-          return OnboardingScreen();
+          return FirstLaunchScreen();
+        }
+        if (state is OnBoardingPersonality) {
+          return PersonalityOnBoardingScreen();
+        }
+        if (state is OnBoardingPreferences) {
+          return PreferencesOnBoardingScreen();
         }
         if (state is Unauthenticated) {
           return LoginScreen();

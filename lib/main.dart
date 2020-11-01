@@ -87,7 +87,7 @@ class _MainScreenState extends State<MainScreen> {
         if (state is OnBoardingPreferences) {
           return PreferencesOnBoardingScreen();
         }
-        if (state is Unauthenticated) {
+        if (state is Unauthenticated || state is LoggingIn) {
           return LoginScreen();
         }
         if (state is Authenticated) {

@@ -17,9 +17,9 @@ class SmallBundleCard extends StatelessWidget {
       onTap: () {
         forYouBundles.contains(bundleModel)
             ? Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => BundlePage(bundleModel)),
+            MaterialPageRoute(builder: (context) => NewBundleScreen(bundleModel)),
         ) : Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => NewBundleScreen(bundleModel)),
+          MaterialPageRoute(builder: (context) => BundlePage(bundleModel)),
         );
       },
 

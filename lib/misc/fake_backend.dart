@@ -357,7 +357,7 @@ List<CategoryModel> categories = [
       fruitBundle4
     ],
     image: "assets/images/fruit_essentials.jpg",
-    subtitle: "Wild variety for wild tastes",
+    subtitle: "For that inner sweet tooth",
   ),
   CategoryModel(
     title: "Garden Essentials",
@@ -368,37 +368,37 @@ List<CategoryModel> categories = [
       veggieBundle4
     ],
     image: "assets/images/garden_essentials.jpg",
-    subtitle: "Wild variety for wild tastes",
+    subtitle: "A taste of green & healthy",
   ),
   CategoryModel(
     title: "Cooking Adventures",
     bundles: [],
     image: "assets/images/cooking_adventures.jpg",
-    subtitle: "Wild variety for wild tastes",
+    subtitle: "Master your skills",
   ),
   CategoryModel(
     title: "Gym It Up",
     bundles: [],
     image: "assets/images/gym_it_up.jpg",
-    subtitle: "Wild variety for wild tastes",
+    subtitle: "Proteins and fibre galore",
   ),
   CategoryModel(
     title: "Lean Diets",
     bundles: [],
     image: "assets/images/lean_diets.jpg",
-    subtitle: "Wild variety for wild tastes",
+    subtitle: "The right calorie intake",
   ),
   CategoryModel(
     title: "Breakfast at Rejoovany's",
     bundles: [],
     image: "assets/images/breakfast.jpg",
-    subtitle: "Wild variety for wild tastes",
+    subtitle: "Give your mornings a boost",
   ),
   CategoryModel(
     title: "Romantic Dinners",
     bundles: [],
     image: "assets/images/romantic_dinners.jpg",
-    subtitle: "Wild variety for wild tastes",
+    subtitle: "Adding feelings to the mix",
   ),
 ];
 

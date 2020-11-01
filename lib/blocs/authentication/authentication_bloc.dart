@@ -41,7 +41,7 @@ class AuthenticationBloc
     if (isSignedIn) {
       yield Authenticated();
     } else {
-      if (!await _userRepository.isFirstTime()) {
+      if (await _userRepository.isFirstTime()) {
         _userRepository.setUserFirstTime();
         yield FirstLaunch();
       } else {

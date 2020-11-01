@@ -57,22 +57,21 @@ class _FirstLaunchScreenState extends State<FirstLaunchScreen> {
             children: [
               Column(
                 children: [
-                  verticalSpace(300),
+                  verticalSpace(270),
                   Row(
                     children: [
                       horizontalSpace(75),
                       Text(
                         "re",
-                        style: AppStyle.appTitle,
+                        style: AppStyle.appTitle.copyWith(height: 0.8),
                       ),
                       Text(
                         "j",
-                        style: AppStyle.appTitle
-                            .copyWith(color: AppColor.lightGreen),
+                        style: AppStyle.appTitle.copyWith(color: AppColor.lightGreen, height: 0.8),
                       ),
                       Text(
                         "oo",
-                        style: AppStyle.appTitle,
+                        style: AppStyle.appTitle.copyWith(height: 0.8),
                       ),
                     ],
                   ),
@@ -85,8 +84,7 @@ class _FirstLaunchScreenState extends State<FirstLaunchScreen> {
                       ),
                       Text(
                         ".",
-                        style: AppStyle.appSubtitle
-                            .copyWith(color: AppColor.lightGreen),
+                        style: AppStyle.appSubtitle.copyWith(color: AppColor.lightGreen),
                       ),
                     ],
                   ),
@@ -95,12 +93,11 @@ class _FirstLaunchScreenState extends State<FirstLaunchScreen> {
                       horizontalSpace(75),
                       Text(
                         "Redefined",
-                        style: AppStyle.appSubtitle,
+                        style: AppStyle.appSubtitle.copyWith(height: 1),
                       ),
                       Text(
                         ".",
-                        style: AppStyle.appSubtitle
-                            .copyWith(color: AppColor.lightGreen),
+                        style: AppStyle.appSubtitle.copyWith(color: AppColor.lightGreen, height: 1),
                       ),
                     ],
                   ),

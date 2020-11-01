@@ -2,7 +2,6 @@ import 'package:baseapp/misc/fake_backend.dart';
 import 'package:baseapp/misc/text_styles.dart';
 import 'package:baseapp/misc/utils.dart';
 import 'package:baseapp/models/bundle_model.dart';
-import 'package:baseapp/models/bundle_object_model.dart';
 import 'package:baseapp/widgets/big_bundle_card.dart';
 import 'package:baseapp/widgets/bundle_suggestion_container.dart';
 import 'package:baseapp/widgets/tag_card.dart';
@@ -32,6 +31,7 @@ class _BundlePageState extends State<BundlePage> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
+//                  "TEST",
                   this.widget.bundleModel.title,
                   style: AppStyle.pageTitle,
                 ),

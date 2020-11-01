@@ -74,10 +74,10 @@ class _PersonalityOnBoardingScreenState
             child: PageView(
               controller: controller,
               children: [
-                Image.asset("assets/images/onboarding_nerd.png"),
-                Image.asset("assets/images/onboarding_cook.png"),
-                Image.asset("assets/images/onboarding_dilettante.png"),
-                Image.asset("assets/images/onboarding_gentle.png"),
+                Image.asset("assets/images/p1.png"),
+                Image.asset("assets/images/p2.png"),
+                Image.asset("assets/images/p3.png"),
+                Image.asset("assets/images/p4.png"),
               ],
             ),
           ),

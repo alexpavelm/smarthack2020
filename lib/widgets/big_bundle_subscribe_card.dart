@@ -104,6 +104,11 @@ class _BigBundleSubscribeCardState extends State<BigBundleSubscribeCard> {
               top: adaptiveWidth(50),
               child: GestureDetector(
                 onTap: () {
+                  if (!myBundles.contains(widget.bundleModel)) {
+                    myBundles.add(widget.bundleModel);
+                  } else {
+                    myBundles.remove(widget.bundleModel);
+                  }
                   Future.delayed(Duration(milliseconds: 500), () {
                     setState(() {
                       isSubscribed = !isSubscribed;

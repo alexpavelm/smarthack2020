@@ -405,3 +405,93 @@ List<CategoryModel> categories = [
 List<BundleModel> myBundles = [fruitBundle1, fruitBundle2];
 
 List<BundleModel> forYouBundles = [fruitBundle4, fruitBundle2, fruitBundle1, fruitBundle3];
+
+List<BundleObjectModel> preferences1 = [
+  BundleObjectModel(
+    title: "Natural Yoghurt",
+    color: Colors.yellow.shade100,
+    image: "assets/images/fruit_essentials.jpg",
+    subtitle: "45% had this",
+  ),
+  BundleObjectModel(
+    title: "Salad",
+    color: Colors.yellow.shade100,
+    image: "assets/images/salad_essentials.jpg",
+    subtitle: "45% had this",
+  ),
+  BundleObjectModel(
+    title: "Pizza",
+    color: Colors.yellow.shade100,
+    image: "assets/images/essentials.jpg",
+    subtitle: "45% had this",
+  ),
+  BundleObjectModel(
+    title: "Steak",
+    color: Colors.yellow.shade100,
+    image: "assets/images/cooking_adventures.jpg",
+    subtitle: "45% had this",
+  ),
+  BundleObjectModel(
+    title: "Fish",
+    color: Colors.yellow.shade100,
+    image: "assets/images/lean_diets.jpg",
+    subtitle: "45% had this",
+  ),
+  BundleObjectModel(
+    title: "Sea Food",
+    color: Colors.yellow.shade100,
+    image: "assets/images/ready_for_pickling.jpg",
+    subtitle: "45% had this",
+  ),
+  BundleObjectModel(
+    title: "Hot Soup",
+    color: Colors.yellow.shade100,
+    image: "assets/images/veggie_soup_mix.jpg",
+    subtitle: "45% had this",
+  ),
+  BundleObjectModel(
+    title: "Desert",
+    color: Colors.yellow.shade100,
+    image: "assets/images/breakfast.jpg",
+    subtitle: "45% had this",
+  ),
+];
+
+List<BundleObjectModel> preferences2 = [
+  BundleObjectModel(
+    title: "Vegan",
+    color: Colors.yellow.shade100,
+    image: "assets/images/salad_essentials.jpg",
+    subtitle: "45% had this",
+  ),
+  BundleObjectModel(
+    title: "Vegetarian",
+    color: Colors.yellow.shade100,
+    image: "assets/images/garden_essentials.jpg",
+    subtitle: "45% had this",
+  ),
+  BundleObjectModel(
+    title: "Meat Lover",
+    color: Colors.yellow.shade100,
+    image: "assets/images/lean_diets.jpg",
+    subtitle: "45% had this",
+  ),
+  BundleObjectModel(
+    title: "Kosher",
+    color: Colors.yellow.shade100,
+    image: "assets/images/veggie_soup_mix.jpg",
+    subtitle: "45% had this",
+  ),
+  BundleObjectModel(
+    title: "Lactose-Free",
+    color: Colors.yellow.shade100,
+    image: "assets/images/veggie_pack.jpg",
+    subtitle: "45% had this",
+  ),
+  BundleObjectModel(
+    title: "Gluten-Free",
+    color: Colors.yellow.shade100,
+    image: "assets/images/ready_for_pickling.jpg",
+    subtitle: "45% had this",
+  ),
+];

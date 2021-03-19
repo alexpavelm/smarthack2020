@@ -20,3 +20,6 @@ Project developed for SmartHack2020 Hackathon in 24h.
 * Pavel Alexandru
 * Preda Andrada Elena
 
+<p align="center">
+  <img width="250" src="/assets/3.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="250" src="/assets/4.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="250" src="/assets/7.jpg">
+</p>
